@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Layouts</title>
+
+        <style>
+            #container {
+               background-color: aliceblue;
+               border: 5px green dotted; 
+            }
+            
+            #header, #main, #footer {
+                height: 200px;
+            }
+
+            #header {
+                background-color: indianred;
+            }
+            
+            #main {
+                background-color: khaki;
+                margin-left: 25px;
+                margin-right: 75 px;
+                margin-top: 10px;
+                margin-bottom: 15px;
+                padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            #footer {
+                background-color: lightblue;
+                /* margin shorthand needs values in clockwise
+                order: top right bottom left
+                order: top/bottom left/right 
+                order: all_sides */
+                margin: 10 100px 5px 10 px;
+            }
+            #sidebar {
+                background-color: lightslategray;
+                height: 200px;
+                width: 200px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="container">
+            
+            <div id="header">
+
+            </div>
+            <div id="main">
+                <div id="sidebar"></div>
+            </div>
+            <div id="footer">
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
