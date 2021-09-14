@@ -1,0 +1,21 @@
+
+gavil@LAPTOP-0UERVD71 MINGW64 ~/Documents (main)
+$ ls
+'My Music'@     'My Videos'@                  fall2021-webdesign-eduardo/
+'My Pictures'@   fall2021-webdesign-abidan/   for-meda-ble/
+
+gavil@LAPTOP-0UERVD71 MINGW64 ~/Documents (main)
+$ cd fall2021-webdesign-abidan
+
+gavil@LAPTOP-0UERVD71 MINGW64 ~/Documents/fall2021-webdesign-abidan (master)
+$ ls
+assignments/  homework/  projects/
+
+gavil@LAPTOP-0UERVD71 MINGW64 ~/Documents/fall2021-webdesign-abidan (master)
+$ cd homework
+
+gavil@LAPTOP-0UERVD71 MINGW64 ~/Documents/fall2021-webdesign-abidan/homework (master)
+$ touch homework1-2.txt
+
+gavil@LAPTOP-0UERVD71 MINGW64 ~/Documents/fall2021-webdesign-abidan/homework (master)
+$
