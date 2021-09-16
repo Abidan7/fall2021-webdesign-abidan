@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>CSS Positions Absolute</title>
+
+        <style>
+            body {
+                margin: 0;
+            }
+            
+            #red, #green, #blue {
+                width: 200px;
+                height: 200px;
+                border-radius: 10px;
+                
+            }
+            
+            /* */
+            #red {
+                background-color: red;
+                position: relative;
+                z-index: 0;
+            }
+
+            #green {
+              position: relative;
+              left: 100px;
+              top: 100px;
+              background-color: green;
+              z-index: 0;
+            }
+
+            #blue {
+                position: relative;
+                left: 200px;
+                top: 200px;
+                z-index: -1;
+                background-color:blue; 
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="red"></div>
+
+        <div id="green"></div>
+
+        <div id="blue"></div>
+
+
+    </body>
+
+</html>

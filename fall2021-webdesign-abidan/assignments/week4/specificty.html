@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+   
+    <title>Specificity</title>
+    
+    <style>
+        /* Selector weights:
+        Element: 2
+        Class: 10
+        ID's: 100
+        Important: 10000
+        
+        Specificity example bellow, body and p, this ruleset is more important */
+        body p {
+            color: blue            
+        }
+            
+        body div p {
+            background-color: green;
+        }
+        /* Element:1 this p specificity property will get ignored */
+       p {
+        color:red;
+        }
+
+        /* now we can add another specificity to apply to another element */
+        .first {
+            background-color: sandybrown;
+        }
+        #unique {
+            color: seagreen;
+        }
+        
+
+
+    </style>
+
+</head>
+
+    <body>
+        <p class="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt quisquam nisi adipisci, quas nihil, beatae expedita, voluptatem at numquam ad in minima libero modi non dolor sit optio alias repellendus!
+        </p>
+
+        <p class="unique">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatem eveniet nisi corporis pariatur, ipsa voluptatibus, recusandae harum ex rerum perspiciatis! Esse sequi eos perferendis dolores expedita ex aut facere!
+        </p>
+        
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Tenetur quam consequuntur consequatur esse ipsa alias maiores blanditiis neque. Omnis maiores excepturi dolor sit facilis incidunt molestias distinctio sed numquam hic?</p>
+        </div>
+    </body>
+</html>
