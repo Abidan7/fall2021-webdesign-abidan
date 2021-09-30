@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+    <head>
+        <meta charset="UTF-8">
+    
+        <title>Gallery Using Flex Box</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            
+            main {
+                background-color: honeydew;
+            }
+            /* Flexbox is a display mode, the word used is "flex" not "flexbox" */
+
+            #image-gallery {
+                display: flex;
+                border: 1px solid black;
+               /* width: 900px; */
+                margin: 0 auto;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }     
+            /* flex-wrap: wrap can be used for several images when necessary */
+            
+         .image-box {
+                height: 400px;
+                border: 1px solid grey;
+                margin: 10px;
+             /* flex-basis is the starting point for child's width */    
+                flex-basis: 200px;
+                flex-grow: 1;
+             
+                /* flex-shrink dictates how much width a child has to sacrifice in order to display within the allowed parent's width */   
+                
+                flex-shrink: 1;
+                overflow: hidden;
+            }
+            /* Note that overflow: hidden says that if any children of the parent is outside of the parent container, that area is automatically hidden from view.
+            */
+
+            #first-image {
+                flex-grow: 2;
+                flex-shrink: 2;
+            }
+        
+         .image-box img {
+                width: 100%;
+            }
+                 
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <header>
+                <h1>My Favorite Gallery</h1>
+            </header>
+            <main>
+                <div id="image-gallery">           
+                    <div class="image-box" id="first-image">
+                        <img src="images/pexels-olya-kobruseva-5238670.jpg">
+                    </div>
+                    <div class="image-box">
+                        <img src="images/pexels-pixabay-268533.jpg">
+                    </div>
+                    <div class="image-box">
+                        <img src="images/pexels-ihsan-aditya-2045600.jpg">
+                    </div>
+                    <div class="image-box">
+                        <img src="images/pexels-nandhu-kumar-312839.jpg">
+                    </div>
+                   
+                </div>
+            </main>
+            <footer>
+                <p>Copyrights held by respective owners</p>
+            </footer>
+        </div>
+    
+    </body>
+</html>
