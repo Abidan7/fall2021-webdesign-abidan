@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops & Functions</title>
+</head>
+<body>
+    
+    <script>
+
+        // FOR LOOP is a code block that runs until the condition is false (when a true condition is given)
+        // for (initialization; condition; iterator) {code block}
+        // Note: The condition must change to a false at one point in time.
+        // The ++ means that you add a 1 to an existing value of a given variable.
+
+        for (var iteration = 0; iteration < 10 ; iteration++) {
+
+            console.log("hello");
+            console.log(iteration);
+        }
+
+        // FUNCTION is a collection of code that runs when a function name is called, for example:
+        
+        // This is a function DEFINITION
+        function myFunctionName() {
+            console.log("Hello there!");
+            console.log("Is it going to rain today?");
+            console.log("Bye!");
+        }
+
+        // This is a function CALL
+        myFunctionName();
+        
+        // A for loop 
+
+        for (var iteration = 0; iteration > 3; iteration++) {
+
+            console.log("Hey there!");
+            console.log("I ask this on more time!");
+            console.log("Do I need an umbrella?");
+            console.log("I am not going out!");
+            console.log("Well, whatever!")
+        }
+        
+
+        // Function features input: arguments/parameters + output data, return.
+
+        // An addition function.
+        // ARGUMENTS & PARAMETERS
+        // An argument is data given to a function.
+        // A parameter is a special variable that holds the given data.
+        // for example "+" and "addNumber".
+
+        function add2Numbers(number1, number2) {
+        var total =  number1 + number2;
+        console.log(total);
+        }
+
+        add2Numbers(782, 9);
+        add2Numbers(68, 73);
+        add2Numbers(941, 94); 
+
+        function squareNumber(number) {
+            var total = number * number;
+            console.log("The square of " + number + " is " + total);
+        }
+
+        squareNumber(16);
+        squareNumber(128);
+
+        // Combining Functions and Loops
+
+        for (var counter = 0; counter < 50; counter++); {
+            squareNumber(counter);
+        }
+        
+        for (var counter = 0; counter < 50; counter++) {
+            squareNumber(counter);
+        }
+    </script>
+</body>
+</html>

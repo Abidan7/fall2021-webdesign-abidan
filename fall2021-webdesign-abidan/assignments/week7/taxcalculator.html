@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+
+    <title>Tax Calculator</title>
+
+    <style>
+        h2, h3, p, label, button, input {font-family: 'Open Sans Condensed', sans-serif;}
+        
+        h2, h3 {font-size: 22px; color: midnightblue;}
+
+        p {font-size: 18px; color: crimson;}
+
+        label, button {font-size: 16px; color: green;}
+
+        input {font-size: 18px; color: midnightblue;}
+
+    </style>
+</head>
+
+<body>
+
+    <h2>San Francisco Tax Calculator</h2>
+
+    <p>Use this calculator to learn how much sales tax is owed in purchases.<br> Input numbers only. The current San Francisco tax rate is 8.5%.</p>
+    
+    <h3>Input Price</h3>
+    
+    <label for="input1">Purchase Price</label>
+    <br />
+    <input type="number" id="input1"/>
+    <br />
+    <button onClick="calculateTax()">Calculate Tax</button>
+        <!-- The onClick is the JavaScript function that allows an element -->
+
+    <h3>Results</h3>
+
+    <p id="results"></p>
+
+    <script>
+        function calculateTax() {
+            var subtotal = document.getElementById("input1").value;
+
+            var taxRate = 0.085;
+
+            var totalTax = subtotal * taxRate;
+
+
+            var totalExpense = parseFloat(subtotal) + totalTax;
+            // Using the assignment operator = anything on the right side MUST happen first, and once a value is produced, it gets stored on the left side. Reversing this order will not work.            
+            totalTax = totalTax.toFixed(2);
+            
+            totalExpense = totalExpense.toFixed(2);
+
+            document.getElementById("results").innerHTML = "SF Tax: $" + totalTax + "<br />Total: $" + totalExpense;
+
+        }
+
+       
+
+
+    </script>
+</body>
+</html>
