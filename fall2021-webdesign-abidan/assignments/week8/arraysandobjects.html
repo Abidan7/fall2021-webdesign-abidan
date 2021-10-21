@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title>JavaScript and Arrays</title>
+</head>
+
+<body>
+   <script>
+
+    // JavaScript Array
+   
+    // A downside of variables is that they can only store ONE value at a time.
+
+    var employeeSalaries = 76000;
+
+    // 
+    var employeeSalariesArray = [76000, 40000, 60000, 36000, 70000, 29000];
+
+    // Arrays hold data that relates to each other in some way, the following example has mixed data that problably doesn't relate.
+    var anArrayWithMixData = [5000, "hello", true];
+
+    // ARRAY METHODS (FUNCTIONS)
+
+    // .push() ADDS a piece of data to the END of the array.
+    console.log(employeeSalariesArray.toString());
+
+    employeeSalariesArray.push(56000);
+
+    employeeSalariesArray.push(10000);
+
+    console.log(employeeSalariesArray.toString());
+
+    // .pop() method returns a removed value to where ever is called. 
+
+    employeeSalariesArray.pop();
+
+    console.log(employeeSalariesArray.toString());
+
+    // .unshift() adds a value to the start of the array. 
+    employeeSalariesArray.unshift(3000);
+    
+    console.log(employeeSalariesArray.toString);
+
+    // .shift() removes a value from the start of the array, it returns the removed value to where ever shift was called.
+    employeeSalariesArray.shift();
+
+    employeeSalariesArray.shift();
+
+    console.log(employeeSalariesArray.toString());
+
+    var aString = "hello";
+
+    // aString.shift(); Does not work because aString needs to be an array for .shift() to work.
+
+    // Finding the lenght of an array using .lenght
+    // .lenght is NOT a funcion, so it doesn't need a parenthesis at the end.
+    console.log(employeeSalariesArray.length);
+
+
+    // var message = "Employee #1 makes $" + employeeSalariesArray[0] + " a year.";
+    // console.log(message);
+    // Using Arrays and Loops together is really common.
+
+    for (var i = 0; i < employeeSalariesArray.length; i++) {
+
+        var message = "Employee #" + (i + 1) + " makes $" + employeeSalariesArray[i] + " a year";
+        
+        console.log(message);
+
+    }
+    
+    // JavaScript OBJECTS
+
+    // Usage of curly braces for code blocks and objects.
+
+    // Curly braces for code blocks.
+    if (false) {
+        // code goes here.
+    }
+    
+    // Curly braces used for objects
+        var IamFirstEmployee = {
+        "firsName": "Abidan",
+        "lastName": "Ramirez",
+        "age": 45
+        "favoriteFoods": ["pupusas", "tacos", "curry"]
+    };
+
+    var IamFirstEmployeeArray = [
+        "Abidan", "Ramirez", 45, "pupusas", "tacos", "curry"
+    ];
+
+   </script>
+   
+</body>
+</html>

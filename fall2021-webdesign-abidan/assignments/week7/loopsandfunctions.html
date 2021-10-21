@@ -32,6 +32,8 @@
 
         // This is a function CALL
         myFunctionName();
+        myFunctionName();
+        myFunctionName();
         
         // A for loop 
 
@@ -65,18 +67,30 @@
         function squareNumber(number) {
             var total = number * number;
             console.log("The square of " + number + " is " + total);
+        
+            return total;
+            if (total > 100) {
+                return total;
+            } else if (total < 100) {
+                return total + 100;
+            }
         }
+        
+        var results = squareNumber(15);
+        squareNumber(125);
 
-        squareNumber(16);
-        squareNumber(128);
+        var convertedNumber = parseFloat("60Hello");
+
+        // var add2ToSquared = total + 2;
+
 
         // Combining Functions and Loops
 
-        for (var counter = 0; counter < 50; counter++); {
+        for (var counter = 0; counter < 50; counter = counter + 2); {
             squareNumber(counter);
         }
         
-        for (var counter = 0; counter < 50; counter++) {
+        for (var counter = 1; counter < 50; counter++) {
             squareNumber(counter);
         }
     </script>

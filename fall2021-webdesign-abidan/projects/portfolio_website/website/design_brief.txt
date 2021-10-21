@@ -1,0 +1,38 @@
+Project Personal Business Website
+
+Planning and Design:
+Based on the main idea of creating and maintaining my very own website, I have gathered what I believe it may include so visitors can have a pleasant viewing experience. My first website may be easy to access, navigation, and simple but with meaningful content.
+
+For Fonts, I have chosen four (4) main fonts that may make my site amicable to the visitor:
+Open Sans Condensed,
+Lato, sans-serif,
+Explora, cursive, and,
+IBM Plex, sans-serif.
+
+Of FontAwesome, I am inspired to use CC Stripe and Eraser. However, I am planning to use my very own design which dates back to 2002.
+
+From Canva Wheel, there are three (3) color choices for background, contrast and transition. The chosen ones are #050515, #0a0a29, and #141452. There are more that I wish to chose from the same category are #ac5365, #53aca2, #b14e5e, .
+
+I am yet to create an icon that would identify my ficticious company, I am using my old and fake business card which has sharp edges on the icon.
+C:\Users\gavil\Documents\fall2021-webdesign-abidan\projects\potfolio_planning\Website\business-card.jpg
+
+For my mocked website, I am definetely using the pages we have created and worked on html.
+The proposed lineup webpages are:
+
+HOME PAGE, it will contain a Main container where my picture or LOGO image will be displayed, a Sidebar navigation, and a footer where the copyrights will be allocated.
+
+ABOUT ME, a one page biography where I'll describe myself in a professional level. My accomplishments, challenges, goals and future projects. An honest view of self which will include skills, capabilites, areas of expertise and clientele served. Display core values as a selling point to prospect individuals for future business.
+
+The second part will transition to my association with CC Corp. Group, which will be my business name to be used in a near future should I own a small business here in the US.
+
+SERVICES, a ficticious line of services that resemble of a consulting firm but dedicated to building and maintaining websites.
+
+CC CORP PROJECT, an individual collaboration from a group of five founders of a small internet cafe that I hold rights to own. 
+
+HOBBIES, it will display my stargazing hobby, plans to share other interests such as simple car repairs and maintenace and racing interests.
+
+CONTACT, off my personal business card. 
+
+I am adding an old outdated resume for this project, an updated one will be installed later on for the purpose of this course.
+
+End.
