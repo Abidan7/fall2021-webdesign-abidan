@@ -2,22 +2,27 @@
 
 <html lang="en">
     <head>
-        <meta charset="utf-8" /> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
         <title>Skywatching as a Hobby</title>    
     
+        <link rel="stylesheet" href="styles.css">
+
         <style>
     
             body {
-                background-image: url("hobby_images/pexels-kid-candy-5425513.jpg");
-                margin: 0;
-            
+            background-color: #0a0a29;
+            background-image: url("../other_images/pexels-ihsan-aditya-2045600.jpg");
+            margin: 0;        
             }
                 
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-             p {
+            p {
                font-size: 19x;
-               font-family: 'Open Sans', sans-serif;
+               font-family: 'Open Sans Condensed', sans-serif;
                color: rgb(204, 199, 199);
                text-align: justify;
                line-height: 22px; 
@@ -26,22 +31,21 @@
              
 
             blockquote, figcaption {
-               font-family: Verdana, Geneva, Tahoma, sans-serif;
+               font-family: IBM Plex, sans-serif;
                line-height: 18px;
                color: rgb(78, 136, 136);
-               text-align: left;              
+               text-align: center;              
             }
 
-            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
 
-            h3 {
-               font-size: 22px;
-               font-family: 'Inter', sans-serif;
-               text-align: left;
-               text-transform: capitalize;
-               color:rgb(88, 88, 119);
+            nav ul {
+            display: flex;
+            width: 660px;
+            margin-left: 300px;
+            margin: center;
             }
-             
+       
             img {
                border-color: lightcyan;
                border-width: 10px;
@@ -53,23 +57,12 @@
             width:  1200px;
             height: fit-content;
             background-color: rgb(8, 5, 26);
-            margin: 15px auto;
-            border-radius: 15px;
+            margin: 10px auto;
+            border-radius: 10px;
+            padding: 15px 15px 15px;
+            padding-bottom: 10px;
             }
-        
-            ul {
-                text-transform: initial;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                color:teal;
-            }
-               
-            li {
-               font-size: 18px;
-               text-transform: initial;
-               font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-               color:teal;
-            }
-            
+                                  
             #map { 
                 height: 500px;
                 display: grid;
@@ -81,7 +74,6 @@
                 height: fit-content;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
-                
             }
 
             #step1, #step2, #step3, #step4 {
@@ -95,7 +87,7 @@
             }
 
             footer {
-                color: lemonchiffon;
+            color: lemonchiffon;
             }
         </style>
     </head>
@@ -103,6 +95,19 @@
       <div id="container">
            
         <header>
+            <div class="header">
+        
+                <nav>
+                  <ul>
+                   <li><a href="index.html">Main Page</a></li>
+                    <li><a href="hobby.html">Hobby</a></li>
+                   <li><a href="inspiringphotos.html">Fav Images</a></li>
+                   <li><a href="youtube.html">Fav Sites</a></li>
+                 </ul>
+                </nav>
+              
+            </div>
+            
             <figure>
                 <blockquote cite=https://www.goodreads.com/quotes/tag/sky-quotes#97>
                 <p>“The journey we're on is as vast and sacred as the stars in the night sky.”</p>
@@ -192,18 +197,17 @@
             <ul>
                 <li>For getting started in astronomy, go to <url="https://www.skyandtelescope.org/astronomy-resources/stargazing-basics/how-to-start-right-in-astronomy/>sky and telescope's webpage.</a></li>
                 <li>For stargazing basics guide, go to <url="https://www.calacademy.org/skywatchers-guide">skywatchers guide webpage.</a></li>
-                </ul>
+            </ul>
                 
-                <p id="last">There is a ton of information up there that you can use to swim into the night of stars. I will continue to share as much as can.</p>
+            <p id="last">There is a ton of information up there that you can use to swim into the night of stars. I will continue to share as much as can.</p>
+            <a href="hobby.html">Go back to top</a>
 
         </main>    
                        
         <footer>
-            <pre>Copyright 2021 Abidan Ramirez, CC Corp. US Group</pre>
-        </footer>            
-              
+            <pre>Copyright &copy; 2021 Abidan Ramirez, CC Corp. US Group</pre>
+        </footer>                   
     </body>
-
 </html>    
 
 

@@ -1,34 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Website - Favorite YouTube Videos</title>
-</head>
+    <title>Favorites Links and Videos</title>
+  
+    <link rel="stylesheet" href="styles.css">
 
-<body>
+    <style>    
+      
+      body {
+      background-color: #0a0a29;
+      background-image: url("../other_images/pexels-ihsan-aditya-2045600.jpg");
+      margin: 0;
+      }
+
+      nav ul {
+      display: flex;
+      width: 660px;
+      margin-left: 300px;
+      margin: center;
+      }
+        
+      nav ul li {
+      display: inline-block;
+      height: 48px;
+      width: 120px;
+      text-align: center;
+      line-height: 48px;
+      text-transform: uppercase;
+      }
+
+      main {
+      margin: center;
+      margin-left: 150px; 
+      font-size: 22px; 
+      padding: 0px 10px;
+      }
+
+   
+      blockquote, figcaption {
+       font-family: IBM Plex, sans-serif;
+       line-height: 18px;
+       color: rgb(78, 136, 136);
+       text-align: center;              
+      }
+
+      img {
+       border-color: lightcyan;
+       border-width: 10px;
+       border-style: solid;
+       border-radius: 15px;
+      }
+
+      #container {
+       width:  1200px;
+       height: fit-content;
+       background-color: rgb(8, 5, 26);
+       margin: 10px auto;
+       border-radius: 10px;
+       padding: 15px 15px 15px;
+       padding-bottom: 10px;
+      }
+             
+      #favorite { 
+        height: auto;
+        display: grid;
+      }
+              
+      footer {
+      color: lemonchiffon;
+      }
+
+    </style>
+  </head>
+  
+  <body>
 
     <div id="container">
 
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="youtube.html">YouTube Videos</a></li>
-                    <li>Links</li>
-                </ul>
-            </nav>
-        </header>
+      <div class="header">
+        <nav>
+          <ul>
+           <li><a href="index.html">Main Page</a></li>
+           <li><a href="hobby.html">Hobby</a></li>
+           <li><a href="inspiringphotos.html">Fav Images</a></li>
+           <li><a href="youtube.html">Fav Sites</a></li>
+          </ul>
+        </nav>
+      </div>
+     
+      <main>
+        <div id="favorite">
+        <div><figure>
+        <iframe width="780" height="480" src="https://www.youtube-nocookie.com/embed/nJr-RmJxtDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption>This is a very cool video, I wish I could try to build this myself. </figcaption>
+        </figure>
+        </div>
 
-        <main>
+        <div><figure>
+        <iframe width="780" height="480" title="Calvin and Hobbes in Wikipedia" src="https://en.wikipedia.org/wiki/Calvin_and_Hobbes"></iframe></figure><figcaption>And this is my favorite comic strip from my childhood.</figcaption>
+        </div>
 
-        </main>
-
-        <footer>
-
-        </footer>
-
-</body>
+        <a href="youtube.html">Go back to top</a>
+      </main>
+    </div>
+  
+    <footer>
+      <pre>Copyright &copy; 2021 Abidan Ramirez, CC Corp. US Group</pre>
+    </footer>   
+  </body>
 </html>

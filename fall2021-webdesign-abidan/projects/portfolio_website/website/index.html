@@ -1,37 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Index</title>
 
-    <link rel="stylesheet" href="main.css" />
-</head>
+    <link rel="stylesheet" href="styles.css" />
 
-<body>
-    <div id="container">
-        <header>
+    <style>     
+      
+      body {
+        
+      }
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="basics.html">HTML Basics</a></li>
-                    <li><a href="styles.html">CSS Basics</a></li>
-                    <li><a href="images.html">Image Basics</a></li>
-                    <li><a href="thirdparty.html">Extra Tools</a></li>
-                </ul>
-            </nav>
-        </header>
+      .main {
+      margin-left: 150px; 
+      font-size: 22px; 
+      padding: 0px 10px;
+      }
 
-        <main>
+      .sidenav {
+        height: 100%;
+        width: 150px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #0a0a29;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
 
-        </main>
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 24px;
+        color: #ac5365;
+        display: block;
+      }
 
-        <footer>
-            <pre>Copyright &copy; 2021 CC Corp Group</pre>
-        </footer>
+      .sidenav a:hover {
+        color: #53aca2;
+      }
+      
+      @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 15px;}
+      
+      nav ul {
+      width: 660px;
+      margin-left: auto;
+      }
+
+      nav ul li {
+      display: inline-block;
+      height: 48px;
+      width: 120px;
+      text-align: center;
+      line-height: 48px;
+      text-transform: uppercase;
+      }
+
+      main table td {
+      border: 1px solid black;
+      padding: 5px;
+      border-radius: 5px;
+      }
+
+      footer {
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+    
+  <body>
+
+    <div class="sidenav">
+      <a href="base.html">Home</a>
+      <a href="aboutme.html">About me</a>
+      <a href="services.html">Services</a>
+      <a href="ccompany.html">CC Corp Project</a>
+      <a href="">Contact</a>
+      </div>
+
+     <header>
+        <div class="main">
+        
+          <nav>
+            <ul>
+             <li><a href="index.html">Home</a></li>
+              <li><a href="hobby.html">Hobbies</a></li>
+             <li><a href="gallery.html">images</a></li>
+             <li><a href="youtube.html">YouTube</a></li>
+           </ul>
+          </nav>
+        
+        </div>
+      </header>
+     
+      <div id="container">
 
     </div>
-</body>
+
+
+    <footer>
+      <pre>Copyright &copy; 2021 CC Corp Group</pre>
+    </footer>   
+
+  </body>
 </html>

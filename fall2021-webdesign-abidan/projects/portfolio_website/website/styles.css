@@ -1,5 +1,5 @@
 #size-and-color {
-    font-size: 36px;
+    font-size: 24px;
     color: #ac5365;
 }
 
@@ -23,24 +23,21 @@
     text-decoration: underline;
 }
 
-#crossed {
-    text-decoration: line-through;
-}
 
 #height {
     line-height: 28px;
 }
 
 #font {
-    font-family: "Explora", cursive;
+    font-family: "Open Sans Condensed", cursive;
 }
 
 #margin, #padding {
     width: 300px;
     height: 300px;
-    display: inline-block;
+    
     background-color: #c0392b;
-    vertical-align: top;
+   
     color: #ecf0f1;
     text-align: justify;
 }
@@ -51,63 +48,6 @@
 
 #padding {
     padding: 40px;
-}
-#size-and-color {
-    font-size: 36px;
-    color: red;
-}
-
-#right {
-    text-align: right;
-}
-
-#center {
-    text-align: center;
-}
-
-#italics {
-    font-style: italic;
-}
-
-#bold {
-    font-weight: bold;
-}
-
-#underline {
-    text-decoration: underline;
-}
-
-#crossed {
-    text-decoration: line-through;
-}
-
-#height {
-    line-height: 28px;
-}
-
-#font {
-    font-family: "Lato", sans-serif;
-}
-
-#margin, #padding {
-    width: 300px;
-    height: 300px;
-    display: inline-block;
-    background-color: #c0392b;
-    vertical-align: top; 
-    color: #ecf0f1;
-    text-align: justify;
-}
-
-#margin {
-    margin: 40px;
-}
-
-#padding {
-    padding: 40px;
-}
-body {
-    color: #2c3e50;
 }
 
 #container {
@@ -119,6 +59,7 @@ body {
 }
 
 body {
+    color: #0a0a29;
     font-family: "Lato", sans-serif;
   }
 
@@ -146,9 +87,15 @@ body {
     color: #53aca2;
   }
 
+header {
+    font-family: IBM Plex, sans-serif;
+}
+
 nav ul {
+    display: flex;
     width: 660px;
-    margin-left: auto;
+    margin-left: 300px;
+    margin: center;
 }
 
 nav ul li {
@@ -158,6 +105,21 @@ nav ul li {
     text-align: center;
     line-height: 48px;
     text-transform: uppercase;
+}
+
+ul li {
+     font-size: 18px;
+     text-transform: initial;
+     font-family: 'Open Sans Condensed', sans-serif;
+     color:teal;
+}
+
+h3 {
+    font-size: 22px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: left;
+    text-transform: capitalize;
+    color:rgb(88, 88, 119);
 }
 
 main table td {
