@@ -1,131 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-    <head>
-        <meta charset="UTF-8">
-    
-        <title>CC Internet Cafe</title>
-        
-        <style>
-            .sidenav {
-            height: 100%;
-            width: 150px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #0a0a29;
-            overflow-x: hidden;
-            padding-top: 20px;
-            }
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
 
-            .sidenav a {
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 24px;
-            color: #ac5365;
-            display: block;
-            }
+    <link rel="stylesheet" href="styles.css" />
 
-            .sidenav a:hover {
-            color: #53aca2;
-            }
+    <style>     
+      .main {
+       margin-left: 150px; 
+       font-size: 20px; 
+       padding: 0px 10px;
+       background-color: honeydew;
+      }
 
-            .main {
-            margin-left: 150px; 
-            font-size: 24px; 
-            padding: 0px 10px;
-            }
+      .sidenav {
+        height: 100%;
+        width: 150px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #0a0a29;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
 
-            @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 15px;}
-            }
-            
-            
-            body {
-                margin: 0;
-            }
-            
-            main {
-                background-color: honeydew;
-            }
-         
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 24px;
+        color: #ac5365;
+        display: block;
+      }
 
-            #image-gallery {
-                display: flex;
-                border: 1px solid black;
-              
-                margin: 0 auto;
-                flex-direction: row;
-                flex-wrap: nowrap;
-            }     
-       
-            
-         .image-box {
-                height: 400px;
-                border: 1px solid grey;
-                margin: 10px;
-            
-                flex-basis: 200px;
-                flex-grow: 1;
-             
-        
-                
-                flex-shrink: 1;
-                overflow: 1;
-            }
-           
-                            
-         .image-box img {
-                width: 100%;
-            }
+      .sidenav a:hover {
+        color: #53aca2;
+      }
+      
+      @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 15px;}
+      
+      nav ul {
+      width: 660px;
+      margin-left: auto;
+      }
 
-         body {
-            font-family: "Lato", sans-serif;
-            }
-        </style>
+      main table td {
+      border: 1px solid black;
+      padding: 5px;
+      border-radius: 5px;
+      }
+                     
+      #image-gallery {
+        display: flex;
+        border: 1px solid black;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
+       }     
+
+     image1, image2, image3, image4 {
+         column-span: 1/3;
+     }  
+
+
+
+      body {
+        font-family: "Lato", sans-serif;
+       }
+      
+     footer {
+        color: lemonchiffon;
+      }
+      
+    </style>
   </head>
     
   <body>
-        <div class="sidenav">
-      <a href="#home">Home</a>
-      <a href="#about">About me</a>
-      <a href="#services">Services</a>
-      <a href="#company">CC Corp Project</a>
-      <a href="#contact">Contact</a>
-      </div>
 
-        <div class="main">
-        
-        
-        </div> 
-    
+        <div class="sidenav">
+        <a href="base.html">Home</a>
+        <a href="aboutme.html">About me</a>
+        <a href="services.html">Services</a>
+        <a href="../cccorp_personal/Supervisor Resume.pdf">Resume</a>
+        <a href="../cccorp_personal/business-card.pdf">Contact</a>
         </div>
-  </body>
-  
-       
-        </style>
-    </head>
-    
-    <body>
-        <div id="container">
-            <header>
-                <h3>CC Corp First Internet Cafe</h3>
-            </header>
+
+        <header>
+        <div class="main">
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobby.html">Hobbies</a></li>
+            <li><a href="gallery.html">images</a></li>
+            <li><a href="youtube.html">YouTube</a></li>
+            </ul>
+        </nav>
+        
+        </div>
+        </header>
+
+      <div class="main">
+        
+        <div id="container"
+                
+
             <main>
-                <div id="image-gallery">           
-                    <div class="image-box" id="first-image">
-                        <img src="../other_images/local.jpg">
+                <h3>CC Corp Project</h3>
+                <h4>CopyComp S.A.'s Birth</h4>
+                <p>1994: The idea of creating a student own internet cafe was first put together by a group of five "2do Grado de Bachillerato" high school students. The original founders were Roberto C., Noe S., Mirta R. (my younger sister), Luis Enrique (late), and myself.
+                <p>1995: Copyright holdings, legal ownership, technical and future plans. With the help of our computer class instructors, we continued doing research for funding, operating, and sustaining such endeavour. Each one of the original founders would contribute with time or funds towards the start of the company.
+                <p>1996-1999: College Hiatus, due to focusing in our personal careers and work, we decided to put our plans on hold until further meetings. In May of 1999 I emigrated to the US., surrended all of my rights to the rest of my colleages.
+                
+                <h4>CopyComp S.A. Individual Use and First Internet Cafe</h4>
+                <p>After a brief reunion with all of the founder members, it was decided that we all shared the intellectual property of CC Corp individually for professional or commercial use. Robert C., has been using it for his IT services. Noe S., uses it occassionally for his graphic design gigs.
+                
+                <img id="bcard" src="../cccorp_personal/business-card-cut.jpg" alt="CopyCom Business Card" width="495" height="295"><figcaption>This was my first mocked business card created while taking computer classes in City College of San Francisco.</figcaption>
+                <p>2008-2009: My younger sister and I decided to open our first internet cafe in San Salvador, El Salvador. I would take on the funding to purchase equipment and materials <br>while my sister cared for logistics, local expenses including rent and utilities.
+                </p>
+                               
+                <div class="image-gallery" id="image-gallery">           
+                    <div id="image1">
+                        <img src="../cccorp_personal/local.jpg">
                     </div>
-                    <div class="image-box">
-                        <img src="../other_images/business-facade.jpg">
+                    <div id="image2">
+                        <img src="../cccorp_personal/business-facade.jpg">
                     </div>
-                    <div class="image-box">
-                        <img src="../other_images/fax-copier-printer.jpg">
+                    <div id="image3">
+                        <img src="../cccorp_personal/fax-copier-printer.jpg">
                     </div>
-                    <div class="image-box">
-                        <img src="../other_images/server-and-printer.jpg">
+                    <div id="image4">
+                        <img src="../cccorp_personal/server-and-printer.jpg">
                     </div>
                    
                 </div>

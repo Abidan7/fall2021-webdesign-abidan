@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    
     <link rel="stylesheet" href="styles.css" />
     <style>     
-      
-      body {
-        font-family: "Lato", sans-serif;
+      .main {
+        margin-left: 150px; 
+        font-size: 20px; 
+        padding: 0px 10px;
       }
 
       .sidenav {
@@ -33,36 +38,50 @@
         color: #53aca2;
       }
 
-      .main {
-        margin-left: 150px; 
-        font-size: 24px; 
-        padding: 0px 10px;
-      }
-
       @media screen and (max-height: 450px) {
         .sidenav {padding-top: 15px;}
         .sidenav a {font-size: 15px;}
       }
-      
+      nav ul {
+      width: 660px;
+      margin-left: auto;
+      }
+
+      main table td {
+      border: 1px solid black;
+      padding: 5px;
+      border-radius: 5px;
+      }
+      footer {
+        color: lemonchiffon;
+      }
+
     </style>
   </head>
     
   <body>
 
     <div class="sidenav">
-      <a href="#home">Home</a>
-      <a href="#about">About me</a>
-      <a href="#services">Services</a>
-      <a href="ccompany.html">CC Corp Project</a>
-      <a href="../other_images/business-card.pdf">Contact</a>
-      </div>
-
-      <div class="main">
-        
-        
-      </div> 
-    
+      <a href="base.html">Home</a>
+      <a href="aboutme.html">About me</a>
+      <a href="services.html">Services</a>
+      <a href="../cccorp_personal/Supervisor Resume.pdf">Resume</a>
+      <a href="../cccorp_personal/business-card.pdf">Contact</a>
     </div>
+
+    <header>
+      <div class="main">
+        <nav>
+          <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hobby.html">Hobbies</a></li>
+          <li><a href="gallery.html">images</a></li>
+          <li><a href="youtube.html">YouTube</a></li>
+          </ul>
+       </nav>
+      </div>
+    </header>
+    
   </body>
   
   <footer>

@@ -53,14 +53,15 @@
       display: flex;
       flex-wrap: wrap;
       overflow: hidden;
+      flex: 50% 50%;
+      padding: 5px;
      }
 
-     .column {
-      flex: 50%;
-      padding: 5px;
-     } 
-     
-     .column img {
+     .row1 .row2 .row3 .row4 img {             
+   
+      height: auto;
+      display: grid
+      grid-column span 1/3;
       margin-top: 10px;
       vertical-align: middle;
       }
@@ -82,25 +83,29 @@
            <li><a href="index.html">Main Page</a></li>
            <li><a href="hobby.html">Hobby</a></li>
            <li><a href="inspiringphotos.html">Fav Images</a></li>
-           <li><a href="youtube.html">Fav Sites</a></li>
+           <li><a href="favevideonsite.html">Fav Sites</a></li>
            </ul>
         </nav>
       </div>
 
       <main>
         <div class="picture">
-          <div id="column">
+          <div id="row1">
             <img src="../favorite_images/pexels-pixabay-33696.jpg" alt="" width="290" height="395">
-            <img src="../favorite_images/pexels-bruno-scramgnon-596134.jpg" alt="" width="590" height="395">
             <img src="../favorite_images/moon-rising.jpg" alt="" width="290" height="395">
-            <img src="../favorite_images/pexels-jess-loiterton-square.jpg" alt="" width="590" height="725">
-           <img src="../favorite_images/pexels-nandhu-kumar-312839.jpg" alt="" width="590" height="395">
-           <img src="../favorite_images/pexels-olya-kobruseva-5238670.jpg" alt="" width="590" height="395">
-           <img src="../favorite_images/pexels-ihsan-aditya-2045600.jpg" alt="" width="590" height="395">
+            <img src="../favorite_images/pexels-bruno-scramgnon-596134.jpg" alt="" width="590" height="395">
+          </div>
+          <div id="row2">
            <img src="../favorite_images/pexels-edvin-richardson-796206.jpg" alt="" width="590" height="395">
            <img src="../favorite_images/pexels-pixabay-268533.jpg" alt="" width="590" height="395">
-         </div>
-
+          </div>
+          <div id="row3">
+           <img src="../favorite_images/pexels-nandhu-kumar-312839.jpg" alt="" width="590" height="395">
+           <img src="../favorite_images/pexels-ihsan-aditya-2045600.jpg" alt="" width="590" height="395">
+          </div>
+          <div id="row4">
+           <img src="../favorite_images/pexels-olya-kobruseva-5238670.jpg" alt="" width="590" height="330">
+           <img src="../favorite_images/pexels-jess-loiterton-square.jpg" alt="" width="590" height="725">
         </div>
         
       </main>
