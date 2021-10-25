@@ -10,28 +10,36 @@
 
     <style>     
       .main {
-       margin-left: 150px; 
-       font-size: 20px; 
-       padding: 0px 10px;
-       background-color: honeydew;
-      }
+        margin-left: 300px; 
+        font-size: 18px; 
+        padding: 10px 10px;
+      }        
 
       .sidenav {
-        height: 100%;
-        width: 150px;
+        height: 1000px;
+        width: 300px;
         position: fixed;
         z-index: 1;
         top: 0;
         left: 0;
         background-color: #0a0a29;
         overflow-x: hidden;
-        padding-top: 20px;
+        padding-top: 30px;
       }
 
+      .sidenav img {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: 105px;
+        margin-bottom: 30px;
+      } 
+      
       .sidenav a {
         padding: 6px 8px 6px 16px;
+        text-align: center;
         text-decoration: none;
-        font-size: 24px;
+        font-size: 20px;
         color: #ac5365;
         display: block;
       }
@@ -44,107 +52,85 @@
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 15px;}
       
-      nav ul {
-      width: 660px;
-      margin-left: auto;
-      }
 
-      main table td {
-      border: 1px solid black;
-      padding: 5px;
-      border-radius: 5px;
-      }
-                     
       #image-gallery {
         display: flex;
         border: 1px solid black;
         margin: 0 auto;
         flex-direction: row;
         flex-wrap: nowrap;
-       }     
+      }     
 
-     image1, image2, image3, image4 {
-         column-span: 1/3;
-     }  
-
-
-
-      body {
-        font-family: "Lato", sans-serif;
-       }
-      
-     footer {
-        color: lemonchiffon;
+      .bcard {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: 250px;
+        margin-bottom: 15px;
       }
-      
+  
+      image1, image2, image3, image4 {
+      column-span: 1/3;
+      }  
+     
+      .top {
+       font-family: "IBM plex", sans-serif;
+     }
+
+      .footer {
+        color: lemonchiffon;
+      }        
+     
     </style>
   </head>
     
   <body>
-
-        <div class="sidenav">
-        <a href="base.html">Home</a>
+    <div class="sidenav">
+      <img src="../cccorp_personal/Portrait.jpg" />
+        <a href="index.html">Home</a>
         <a href="aboutme.html">About me</a>
         <a href="services.html">Services</a>
-        <a href="../cccorp_personal/Supervisor Resume.pdf">Resume</a>
-        <a href="../cccorp_personal/business-card.pdf">Contact</a>
-        </div>
+        <a href="works.html">Work Experience</a>
+        <a href="ccompany.html">CC Company</a>
+        <a href="contact.html">Contact</a>
+      </div>
 
-        <header>
-        <div class="main">
-        <nav>
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="hobby.html">Hobbies</a></li>
-            <li><a href="gallery.html">images</a></li>
-            <li><a href="youtube.html">YouTube</a></li>
-            </ul>
-        </nav>
-        
-        </div>
+      <div class="main" id="container">
+        <header>      
+          <div class="top">
+            <h3>CC Corp Project</h3>
+          </div>
         </header>
-
-      <div class="main">
         
-        <div id="container"
+        <main>
+          <h4>CopyComp S.A.'s Birth</h4>
+          <p>1994: The idea of creating a student own internet cafe was first put together by a group of five "2do Grado de Bachillerato" high school students. The original founders were Roberto C., Noe S., Mirta R. (my younger sister), Luis Enrique (late), and myself.
+          <p>1995: Copyright holdings, legal ownership, technical and future plans. With the help of our computer class instructors, we continued doing research for funding, operating, and sustaining such endeavour. Each one of the original founders would contribute with time or funds towards the start of the company.
+          <p>1996-1999: College Hiatus, due to focusing in our personal careers and work, we decided to put our plans on hold until further meetings. In May of 1999 I emigrated to the US., surrended all of my rights to the rest of my colleages.
                 
-
-            <main>
-                <h3>CC Corp Project</h3>
-                <h4>CopyComp S.A.'s Birth</h4>
-                <p>1994: The idea of creating a student own internet cafe was first put together by a group of five "2do Grado de Bachillerato" high school students. The original founders were Roberto C., Noe S., Mirta R. (my younger sister), Luis Enrique (late), and myself.
-                <p>1995: Copyright holdings, legal ownership, technical and future plans. With the help of our computer class instructors, we continued doing research for funding, operating, and sustaining such endeavour. Each one of the original founders would contribute with time or funds towards the start of the company.
-                <p>1996-1999: College Hiatus, due to focusing in our personal careers and work, we decided to put our plans on hold until further meetings. In May of 1999 I emigrated to the US., surrended all of my rights to the rest of my colleages.
-                
-                <h4>CopyComp S.A. Individual Use and First Internet Cafe</h4>
-                <p>After a brief reunion with all of the founder members, it was decided that we all shared the intellectual property of CC Corp individually for professional or commercial use. Robert C., has been using it for his IT services. Noe S., uses it occassionally for his graphic design gigs.
-                
-                <img id="bcard" src="../cccorp_personal/business-card-cut.jpg" alt="CopyCom Business Card" width="495" height="295"><figcaption>This was my first mocked business card created while taking computer classes in City College of San Francisco.</figcaption>
-                <p>2008-2009: My younger sister and I decided to open our first internet cafe in San Salvador, El Salvador. I would take on the funding to purchase equipment and materials <br>while my sister cared for logistics, local expenses including rent and utilities.
-                </p>
+          <h4>CopyComp S.A. Individual Use and First Internet Cafe</h4>
+          <p>After a brief reunion with all of the founder members, it was decided that we all shared the intellectual property of CC Corp individually for professional or commercial use. Robert C., has been using it for his IT services. Noe S., uses it occassionally for his graphic design gigs.
+          </p> 
+          <img id="bcard" src="../cccorp_personal/business-card-cut.jpg" alt="CopyCom Business Card" width="495" height="295">
+          <p> This was my first mocked business card created while taking computer classes in City College of San Francisco. </p>
+          <p>2008-2009: My younger sister and I decided to open our first internet cafe in San Salvador, El Salvador. I would take on the funding to purchase equipment and materials <br>while my sister cared for logistics, local expenses including rent and utilities.
+          </p>
                                
-                <div class="image-gallery" id="image-gallery">           
-                    <div id="image1">
-                        <img src="../cccorp_personal/local.jpg">
-                    </div>
-                    <div id="image2">
-                        <img src="../cccorp_personal/business-facade.jpg">
-                    </div>
-                    <div id="image3">
-                        <img src="../cccorp_personal/fax-copier-printer.jpg">
-                    </div>
-                    <div id="image4">
-                        <img src="../cccorp_personal/server-and-printer.jpg">
-                    </div>
-                   
-                </div>
-            </main>
-            
-        </div>
-    
+          <div class="image-gallery" id="image-gallery">           
+            <div id="image1">
+              <img src="../cccorp_personal/local.jpg"  width="455" height="325" />
+              <img src="../cccorp_personal/business-facade.jpg" width="465" height="325" />
+            </div>
+            <div id="image3">
+              <img src="../cccorp_personal/fax-copier-printer.jpg" width="455" height="325" />
+              <img src="../cccorp_personal/server-and-printer.jpg" width="465" height="325" />
+            </div>       
+          </div>
+        </main>
+      </div>
     </body>
     
     <footer>
-        <pre>Copyright &copy; 2021 CC Corp Group</pre>
+        <pre>Copyright &copy; 2021 Abidan Ramirez, CC Corp. US Group</pre>
     </footer>
 </html>

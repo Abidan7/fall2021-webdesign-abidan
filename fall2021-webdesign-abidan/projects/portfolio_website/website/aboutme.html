@@ -6,30 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
 
-    <link rel="stylesheet" href="styles.css" />     
-      
+    <link rel="stylesheet" href="styles.css" />       
     <style>
-        body {
-            background-image: url("/Users/gavil/Documents/fall2021-webdesign-abidan/projects/portfolio_website/other_images/pexels-ihsan-aditya-2045600.jpg");
-            margin: 0;
-        }
+        .main {
+            margin-left: 300px; 
+            font-size: 18px; 
+            padding: 10px 10px;
+        }        
 
         .sidenav {
-            height: 100%;
-            width: 150px;
+            height: 1000px;
+            width: 300px;
             position: fixed;
             z-index: 1;
             top: 0;
             left: 0;
             background-color: #0a0a29;
             overflow-x: hidden;
-            padding-top: 20px;
+            padding-top: 30px;
+        }
+
+        .sidenav img{
+          margin: 0 auto;
+	      margin-top: 30px;
+	      margin-right: auto;
+	      margin-left: 105px;
+	      margin-bottom: 30px;
         }
 
         .sidenav a {
             padding: 6px 8px 6px 16px;
+            text-align: center;
             text-decoration: none;
-            font-size: 24px;
+            font-size: 20px;
             color: #ac5365;
             display: block;
         }
@@ -38,52 +47,55 @@
             color: #53aca2;
         }
 
-        .main {
-            margin-left: 150px; 
-            font-size: 24px; 
-            padding: 0px 10px;
-        }
-
         @media screen and (max-height: 450px) {
             .sidenav {padding-top: 15px;}
             .sidenav a {font-size: 15px;}
+
+        main table td {
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 5px;
         }
-        
+
+        .top {
+            font-family: "IBM plex", sans-serif;
+        }
+
+        .footer {
+        color: lemonchiffon;
+        }        
 
         </style>
     </head>
 
     <body>
-      <div id="container">
-                
-              <div class="header">
+        <div class="sidenav">
+            <img src="../cccorp_personal/Portrait.jpg" />
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About me</a>
+            <a href="services.html">Services</a>
+            <a href="works.html">Work Experience</a>
+            <a href="ccompany.html">CC Company</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    
+        <div class="main" id="container">
+            <header>    
+                <div class="top">
                 <nav>
                   <ul>
-                   <li><a href="base.html">Works</a></li>
                    <li><a href="hobby.html">Hobby</a></li>
                    <li><a href="inspiringphotos.html">Fav Images</a></li>
                    <li><a href="favevideonsite.html">Fav Sites</a></li>
                    </ul>
                 </nav>
-              </div>
-        
-        
-        <div class="sidenav">
-            <a href="index.html">Home</a>
-            <a href="../website/aboutme.html">About me</a>
-            <a href="../website/services.html">Services</a>
-            <a href="../cccorp_personal/Supervisor Resume.pdf">Resume</a>
-            <a href="../cccorp_personal/businesscard.pdf">Contact</a>
-            </div>
-
-
-
-            <div class="main">
-            <img src="../cccorp_personal/Portrait.jpg" />
-
+                </div>                
+            </header>
+                        
+            <main>
             <h3>About me</h3>
 
-            <h3>Early Years</h3>
+            <h4>Early Years</h4>
 
             <ol><li>DOS Class, First Computer Exposure</li>
                 <li>Basic Computer Operation Training</li>
@@ -92,16 +104,16 @@
                 <li>COPA Airlines Gig</li>
             </ol>
 
-            <h3>Computer Experience</h3>
+            <h4>Computer Experience</h4>
         
-            <ul>
+            <ol>
                 <li>CCSF Computer Office Training</li>
                 <li>Linux Attempt</li>
                 <li>CC Project (part 2)</li>
                 <li>DMV Gig</li>
-            </ul>
+            </ol>
 
-            <h3>New Projects</h3>
+            <h4>Current Education</h4>
 
             <ol><li>MEDA </li>
                 <li>CCSF Courses</li>
@@ -116,19 +128,12 @@
                     <dd>"Son of Gideoni, Tribe of Benjamin."</dd>
             </dl>
 
-            <p>Thank You</p>
+            <p>Thank You</p>       
+            </main>
 
-        </div> 
-        
-
+            <footer>
+                <pre>Copyright &copy; 2021 Abidan Ramirez, CC Corp. US Group</pre>
+            </footer>
+        </div>
     </body>
-            
-    <main>
-        
-    </main>
-
-    <footer>
-        <pre>Copyright &copy; 2021 CC Corp Group</pre>
-    </footer>
-
 </html>

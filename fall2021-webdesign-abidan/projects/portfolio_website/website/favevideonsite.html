@@ -9,44 +9,60 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>    
-      
-      body {
-      background-color: #0a0a29;
-      background-image: url("../other_images/pexels-ihsan-aditya-2045600.jpg");
-      margin: 0;
+      .main {
+        margin-left: 300px; 
+        font-size: 18px; 
+        padding: 10px 10px;
+      }        
+
+      .sidenav {
+        height: 1000px;
+        width: 300px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #0a0a29;
+        overflow-x: hidden;
+        padding-top: 30px;
       }
 
-      nav ul {
-      display: flex;
-      width: 660px;
-      margin-left: 300px;
-      margin: center;
-      }
-        
-      nav ul li {
-      display: inline-block;
-      height: 48px;
-      width: 120px;
-      text-align: center;
-      line-height: 48px;
-      text-transform: uppercase;
+      .sidenav img {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: 105px;
+        margin-bottom: 30px;
       }
 
-      main {
-      margin: center;
-      margin-left: 150px; 
-      font-size: 22px; 
-      padding: 0px 10px;
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: #ac5365;
+        display: block;
       }
 
-   
-      blockquote, figcaption {
-       font-family: IBM Plex, sans-serif;
-       line-height: 18px;
-       color: rgb(78, 136, 136);
-       text-align: center;              
+      .sidenav a:hover {
+        color: #53aca2;
       }
 
+     @media screen and (max-height: 450px) {
+     .sidenav {padding-top: 15px;}
+     .sidenav a {font-size: 15px;}
+
+     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+     p {
+        font-size: 19x;
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: rgb(204, 199, 199);
+        text-align: justify;
+        line-height: 22px; 
+        text-transform: initial;          
+      }
+             
       img {
        border-color: lightcyan;
        border-width: 10px;
@@ -77,19 +93,28 @@
   </head>
   
   <body>
-
-    <div id="container">
-
-      <div class="header">
-        <nav>
+    <div class="sidenav">
+      <img src="../cccorp_personal/Portrait.jpg" />
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About me</a>
+      <a href="services.html">Services</a>
+      <a href="works.html">Work Experience</a>
+      <a href="ccompany.html">CC Company</a>
+      <a href="contact.html">Contact</a>
+   </div>
+    
+    <div class="main" id="container">
+      <header>    
+        <div class="top">
+          <nav>
           <ul>
-           <li><a href="index.html">Main Page</a></li>
-           <li><a href="hobby.html">Hobby</a></li>
-           <li><a href="inspiringphotos.html">Fav Images</a></li>
-           <li><a href="favevideonsite.html">Fav Sites</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="inspiringphotos.html">Fav Images</a></li>
+            <li><a href="favevideonsite.html">Fav Sites</a></li>
           </ul>
-        </nav>
-      </div>
+          </nav>
+          </div>                
+      </header> 
      
       <main>
         <div id="favorite">

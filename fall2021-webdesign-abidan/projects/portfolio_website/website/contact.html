@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Favorite Images</title>
-    
+    <title>Favorites Links and Videos</title>
+  
     <link rel="stylesheet" href="styles.css">
 
-    <style>     
+    <style>    
       .main {
         margin-left: 300px; 
         font-size: 18px; 
@@ -64,14 +63,43 @@
         text-transform: initial;          
       }
              
-     footer {
+      img {
+       border-color: lightcyan;
+       border-width: 10px;
+       border-style: solid;
+       border-radius: 15px;
+      }
+
+      .bcard {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: 250px;
+        margin-bottom: 15px;
+      }
+  
+      #container {
+       width:  1200px;
+       height: fit-content;
+       background-color: rgb(8, 5, 26);
+       margin: 10px auto;
+       border-radius: 10px;
+       padding: 15px 15px 15px;
+       padding-bottom: 10px;
+      }
+             
+      #favorite { 
+        height: auto;
+        display: grid;
+      }
+              
+      footer {
       color: lemonchiffon;
-     }      
-      
+      }
+
     </style>
   </head>
-    
-
+  
   <body>
     <div class="sidenav">
       <img src="../cccorp_personal/Portrait.jpg" />
@@ -95,23 +123,19 @@
           </nav>
           </div>                
       </header> 
-
+     
       <main>
-        <div class="picture">
-            <img src="../favorite_images/pexels-pixabay-33696.jpg" alt="" width="290" height="395" />
-            <img src="../favorite_images/moon-rising.jpg" alt="" width="290" height="395" />
-            <img src="../favorite_images/pexels-bruno-scramgnon-596134.jpg" alt="" width="590" height="395" />
-           <img src="../favorite_images/pexels-edvin-richardson-796206.jpg" alt="" width="590" height="395" />
-           <img src="../favorite_images/pexels-pixabay-268533.jpg" alt="" width="590" height="395"/>
-           <img src="../favorite_images/pexels-nandhu-kumar-312839.jpg" alt="" width="590" height="395" />
-           <img src="../favorite_images/pexels-ihsan-aditya-2045600.jpg" alt="" width="590" height="395" />
-           <img src="../favorite_images/pexels-olya-kobruseva-5238670.jpg" alt="" width="590" height="330" />
-           <img src="../favorite_images/pexels-jess-loiterton-square.jpg" alt="" width="590" height="725" />
+        <div id="bcard">
+        <img id="bcard" src="../cccorp_personal/business-card-cut.jpg" alt="CopyCom Business Card" width="495" height="295" />
         </div>
-        
+
+        <div id="resume"><figure>
+        <img id="resume" src="../cccorp_personal/old-resume.jpg" width="794" height="1123" />
+        </div>
+        <a href="contact.html">Go back to top</a>
       </main>
     </div>
-      
+  
     <footer>
       <pre>Copyright &copy; 2021 Abidan Ramirez, CC Corp. US Group</pre>
     </footer>   

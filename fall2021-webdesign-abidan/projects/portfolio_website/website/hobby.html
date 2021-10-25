@@ -8,15 +8,50 @@
         <title>Skywatching as a Hobby</title>    
     
         <link rel="stylesheet" href="styles.css">
-
         <style>
-    
-            body {
-            background-color: #0a0a29;
-            background-image: url("../other_images/pexels-ihsan-aditya-2045600.jpg");
-            margin: 0;        
+            .main {
+                margin-left: 300px; 
+                font-size: 18px; 
+                padding: 10px 10px;
+            }        
+
+            .sidenav {
+                height: 1000px;
+                width: 300px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #0a0a29;
+                overflow-x: hidden;
+                padding-top: 30px;
             }
-                
+
+            .sidenav img{
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-right: auto;
+            margin-left: 105px;
+            margin-bottom: 30px;
+            }
+
+            .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 20px;
+                color: #ac5365;
+                display: block;
+            }
+
+            .sidenav a:hover {
+                color: #53aca2;
+            }
+
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 15px;}
+
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
             p {
@@ -31,37 +66,25 @@
 
             blockquote, figcaption {
                font-family: IBM Plex, sans-serif;
-               line-height: 18px;
+               line-height: 17px;
                color: rgb(78, 136, 136);
                text-align: center;              
             }
 
             @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
 
-            nav ul {
-            display: flex;
-            width: 660px;
-            margin-left: 300px;
-            margin: center;
-            }
-       
             img {
                border-color: lightcyan;
                border-width: 10px;
                border-style: solid;
                border-radius: 15px;
             }
-
-            #container {
-            width:  1200px;
-            height: fit-content;
-            background-color: rgb(8, 5, 26);
-            margin: 10px auto;
-            border-radius: 10px;
-            padding: 15px 15px 15px;
-            padding-bottom: 10px;
+            main table td {
+                border: 1px solid black;
+                padding: 5px;
+                border-radius: 5px;
             }
-                                  
+
             #map { 
                 height: 500px;
                 display: grid;
@@ -90,22 +113,30 @@
             }
         </style>
     </head>
+
     <body>
-      <div id="container">
-           
-        <header>
-            <div class="header">
-        
+        <div class="sidenav">
+            <img src="../cccorp_personal/Portrait.jpg" />
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About me</a>
+            <a href="services.html">Services</a>
+            <a href="works.html">Work Experience</a>
+            <a href="ccompany.html">CC Company</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    
+        <div class="main" id="container">
+            <header>    
+                <div class="top">
                 <nav>
                   <ul>
-                   <li><a href="index.html">Main Page</a></li>
-                    <li><a href="hobby.html">Hobby</a></li>
+                   <li><a href="hobby.html">Hobby</a></li>
                    <li><a href="inspiringphotos.html">Fav Images</a></li>
                    <li><a href="favevideonsite.html">Fav Sites</a></li>
-                 </ul>
+                   </ul>
                 </nav>
-              
-            </div>
+                </div>                
+            </header> 
             
             <figure>
                 <blockquote cite=https://www.goodreads.com/quotes/tag/sky-quotes#97>
@@ -119,8 +150,8 @@
                 
         <main>
                 
-            <p id="first">My name is Jose Abidan Ramirez, I am an amateur stargazer. <br>
-            This page is dedicated to those of you who look up to the sky, are curious about what's up there near and in the deep space.</p> 
+            <p id="first">My name is Jose Abidan Ramirez, I am an amateur stargazer.<br>
+            This page is dedicated to those of you who look up to the sky, are curious about what's up there near and in the deep space. 
 
             <p>Why do I enjoy doing this hobby? There is always something to look up at, I alsways feel fascinated to when I see the sky. Look up to hunt for planets, comets, meteor showers see the moon up close. Since I was a little kid, I would see that never ending, giant black screen that never stops moving until daybreak.</p>
 
@@ -132,7 +163,7 @@
                 <li>Downlowad sky maps in your smartphone or other capable portable device. Most popular ones are Sky Map, Sky Chart, NASA, among others, see further bellow.</li>
             </ul>    
                 
-            <p> Everyone can enjoy the space phenomena! Individuals with limited visual or with impairment are also part of the skywatching community. They do so by converting light to sonic waves, in other words, they listen to the radio waves from the heavens either from an app from a smartphone or listening to radio frequencies. Some do require digital instruments to catch specific frequencies like sound strikes from a dashing meteor.</p>
+            <p> Everyone can enjoy the space phenomena! Individuals with limited visual or with impairment are also part of the skywatching community. They do so by converting light to sonic waves, in other words, they listen to the radio waves from the heavens either from an app from a smartphone or listening to radio frequencies. Some do require digital instruments to catch specific frequencies like sound strikes from a dashing meteor.
             <p>Still, an instrument like a telescope or a smartphone is not mandatory to see a full moon, spot a planet or search for a constellation. Just a cloud free night sky will do the trick.</p>
                  
             <h3>How much does it cost?</h3>
@@ -199,6 +230,7 @@
             </ul>
                 
             <p id="last">There is a ton of information up there that you can use to swim into the night of stars. I will continue to share as much as can.</p>
+            
             <a href="hobby.html">Go back to top</a>
 
         </main>    
